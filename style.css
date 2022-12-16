@@ -1,0 +1,375 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka&family=Righteous&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  scroll-behavior: smooth;
+}
+
+
+body {
+  font-size: 100%;
+  font-family: 'Roboto', sans-serif;
+  overflow-x: hidden;
+  background: #F3F2EF;
+}
+
+.navbar{
+    background: white;
+}
+
+.navbar .blocagem{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10rem;
+}
+
+.container .blocagem .bloco-esquerdo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 0.6rem;
+    overflow: hidden;
+}
+
+.container .blocagem .bloco-esquerdo input{
+    width: 16rem;
+    height: 2rem;
+    padding-inline: 1rem;
+    background: #EEF3F8;
+    outline: none;
+    border: 1px solid rgba(0, 0, 0, 0);
+    border-radius: 0.2rem;
+    overflow: hidden;
+    transition: all 0.4s ease;
+}
+
+.container .blocagem .bloco-esquerdo input:focus{
+    border: 1px solid rgb(158, 158, 158);
+    
+}
+
+.container .blocagem .bloco-direito{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1.2rem;
+}
+
+.container .blocagem .bloco-esquerdo img{
+    width: 2rem;
+}
+.container .blocagem .bloco-direito img{
+    float: left;
+    width:  1.3rem;
+    height: 1.25rem;
+    object-fit: fill;
+}
+
+.container .blocagem .bloco-direito .botao{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.75rem;
+    color: #666666;
+    gap: 0.3rem;
+}
+
+.container .blocagem .bloco-direito .botao img{
+    top: 0;
+}
+
+.container .blocagem .bloco-direito .botao span{
+    bottom: 0;
+}
+
+.container .blocagem .bloco-direito .botao .eu{
+    border-radius: 100%;
+    width:  1.6rem;
+    height: 1.55rem;
+}
+
+.container .blocagem .bloco-direito .botao .text{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 0.2rem;
+}
+
+.container .blocagem .bloco-direito .botao .text img{
+    width: 1rem;
+    height: 0.6rem;
+}
+
+.container .blocagem .bloco-direito .divisor{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 2px;
+    height: 60px;
+    background: #dfdfdf;
+    object-fit: fill;
+}
+
+.container .blocagem .bloco-direito .solucoes{
+    padding-top: 0.2rem;
+    gap: 0.4rem;
+}
+
+.perfil .blocagem{
+    padding-top: 1.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.perfil .blocagem .bloco-esquerdo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+
+}
+
+.perfil .blocagem .bloco-esquerdo .textos-perfil{
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    padding: 2.5rem;
+    padding-top: 4rem;
+}
+
+.perfil .blocagem .bloco-esquerdo .textos-perfil span:nth-child(2){
+    color: #4b4b4b;
+}
+.perfil .blocagem .bloco-esquerdo .textos-perfil span:nth-child(3){
+    font-size: 0.9rem;
+    color: #A4A4A4;
+}
+
+.perfil .blocagem .bloco-esquerdo .textos-perfil p{
+    font-size: 0.9rem;
+    font-weight: bold;
+    cursor: pointer;
+    color: #0A66C2;
+}
+
+.card-pessoas{
+    border-radius: 0.4rem;
+    background-color: white;
+    width: 20rem;
+    min-height: 40rem;
+    box-shadow: 1px black;
+    -webkit-box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.33);
+    -moz-box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.33);
+    box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.33);
+overflow: hidden;
+position: relative;
+}
+
+.card-pessoas h2{
+    text-decoration: none;
+    color: #414141;
+    font-weight: 600;
+    padding: 2rem;
+    font-size: 1.4rem;
+}
+
+.card-pessoas .pessoas{
+    display: flex;
+    flex-direction: column;
+}
+
+.card-pessoas .pessoa{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+
+
+.card-pessoas .pessoa .img-pessoa{
+    padding-top: 0.4rem;
+    min-width: 3.5rem;
+    width: 3.5rem;
+}
+
+.card-pessoas .pessoa img{
+    width: 100%;
+    border-radius: 100%;
+}
+
+.card-pessoas .info-pessoa{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.card-pessoas .info-pessoa span:nth-child(1){
+    font-size: 1rem;
+}
+
+.card-pessoas .info-pessoa span:nth-child(2){
+    padding-top: 0.2rem;
+    padding-bottom: 0.5rem;
+    font-size: 0.8rem;
+    color: #666666;
+}
+
+.card-pessoas .info-pessoa button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: none;
+    border-radius: 1rem;
+    width: 6rem;
+    font-size: 0.9rem;
+    padding-top: 0.4rem;
+    padding-bottom: 0.4rem;
+    color: #666666;
+    border: 2px solid #666666;
+}
+
+
+.card-perfil{
+    border-radius: 0.4rem;
+    background-color: white;
+    width: 50rem;
+    box-shadow: 1px black;
+    -webkit-box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.33);
+    -moz-box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.33);
+    box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.33);
+overflow: hidden;
+position: relative;
+}
+
+.foto-perfil img{
+    position: absolute;
+    border: 4px solid white;
+    top: 5.5rem;
+    left: 3rem;
+    width: 10rem;
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+.edit-perfil{
+    position: absolute;
+    background-color: white;
+    color: #0A66C2;
+    top: 1.5rem;
+    right: 1.2rem;
+    padding: 0.5rem;
+    padding-top: 0.4rem;
+    padding-bottom: 0.4rem;
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+.foto-fundo, .foto-fundo img{
+    object-fit: contain;
+    width: 100%;
+}
+
+.botoes-perfil button:nth-child(1){
+    color: white;
+    background-color: #0A66C2;
+    border: 1px solid #0A66C2;
+    border-radius: 1.2rem;
+    font-size: 0.9rem;
+    font-weight: bold;
+    padding: 0.4rem;
+    padding-inline: 0.65rem;
+    cursor: pointer;
+}
+
+.botoes-perfil button:nth-child(2){
+    color: #0A66C2;
+    background-color: white;
+    border: 1px solid #0A66C2;
+    border-radius: 1.2rem;
+    font-size: 0.9rem;
+    font-weight: bold;
+    padding: 0.4rem;
+    padding-inline: 0.65rem;
+    cursor: pointer;
+}
+
+.botoes-perfil button:nth-child(3){
+    color: #666666;
+    background-color: white;
+    border: 1px solid #666666;
+    border-radius: 1.2rem;
+    font-size: 0.9rem;
+    font-weight: bold;
+    padding: 0.4rem;
+    padding-inline: 0.65rem;
+    cursor: pointer;
+}
+
+
+
+.card{
+    border-radius: 0.4rem;
+    background-color: white;
+    width: 50rem;
+    min-height: auto;
+    box-shadow: 1px black;
+    -webkit-box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.33);
+    -moz-box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.33);
+    box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.33);
+    overflow: hidden;
+    position: relative;
+}
+
+.card .container-titulo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 2rem;
+    padding-inline: 2rem;
+    font-size: 1.34rem;
+    color: #414141;
+}
+
+.card .container-conteudo .descricao{
+    color: #414141;
+    padding-inline: 2rem;
+
+}
+
+.card .container-conteudo{
+    padding: 2rem;
+}
+
+.card .container-conteudo .formacao{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+    letter-spacing: 0.02rem;
+}
+
+.card .container-conteudo .textos{
+    display: flex;
+    flex-direction: column;
+    color: #4b4b4b;
+    gap: 0.2rem;
+}
